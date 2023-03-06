@@ -1,0 +1,476 @@
+html, body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1, .title {
+  font-size: 1.8em;
+  text-align: center;
+  color: #0EA79D;
+  font-weight: bold;
+  margin: auto;
+}
+
+.text-bold {
+  font-weight: bold;
+  color: rgb(37, 33, 33);
+  font-size: 1.4em;
+}
+
+.text-white {
+  color: white;
+}
+
+span {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.subtitle {
+  font-size: 1.6em;
+  text-align: center;
+  color: #0EA79D;
+  font-weight: bold;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.9em;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #0EA79D;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #0EA79D;
+  border: #0EA79D;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: black;
+}
+
+.btn-success {
+  background-color: green;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+.red {
+  background-color: #0EA79D;
+  color: white;
+}
+
+i {
+  cursor: pointer;
+}
+
+.icons {
+  display: table;
+  margin: 20px auto auto 10px;
+  font-size: 1.5em;
+}
+.icons i {
+  margin: 10px;
+}
+.icons i:hover {
+  color: #0EA79D;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #0EA79D;
+}
+
+.hero {
+  height: 60vh;
+  min-height: 400px;
+  margin: 0 auto;
+  display: block;
+  background-image: url("http://wallace-renting.luiluilui.fr/public/img/maison2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 90px;
+}
+.hero__content {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+.hero__content h1 {
+  font-size: 3em;
+  font-style: italic;
+  color: white;
+}
+.hero__content p {
+  margin: 20px auto;
+  font-style: 1.1em;
+  font-weight: 800;
+}
+
+.car {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.car hr {
+  width: 100%;
+}
+.car__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.car__top h1 {
+  color: #0EA79D;
+}
+.car__top .right {
+  display: block;
+}
+.car__top .right h2 {
+  color: #0EA79D;
+  margin: auto auto 0 auto;
+}
+.car__top .right p {
+  margin: 0 auto;
+}
+.car__top .right p span {
+  color: black;
+  font-size: 1em;
+}
+.car .image {
+  text-align: center;
+  margin: 20px auto;
+}
+.car .image img {
+  width: 700px;
+  height: 350px;
+  margin: auto;
+}
+.car__infos {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.car__infos .left .details p span {
+  color: #0EA79D;
+  font-weight: bold;
+}
+.car__infos .left .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.car__infos .left .images a {
+  cursor: pointer;
+  margin: 5px;
+}
+.car__infos .left .images a img {
+  width: 230px;
+  margin: 10x;
+  height: 170px;
+}
+.car__infos .left .images img {
+  width: 230px;
+  height: 170px;
+  margin: 10px;
+}
+.car__infos .left .images h4 {
+  text-align: center;
+  color: #0EA79D;
+  margin: 10px auto;
+}
+.car__infos .left .images button {
+  background-color: #0EA79D;
+}
+.car__infos .left .images button:hover {
+  background-color: black;
+}
+.car__infos .right .card {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  width: 250px;
+}
+.car__infos .right .card__top img {
+  width: 100px;
+  height: 100px;
+}
+.car__infos .right .card__top__infos {
+  font-weight: bold;
+}
+.car__infos .right .card__top__infos i {
+  color: red;
+}
+
+.footer {
+  height: auto;
+  background-color: black;
+  display: block;
+  margin: 80px auto 0 auto;
+  padding-top: 10px;
+}
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+.footer__top .box {
+  flex: 1;
+  display: block;
+  text-align: left;
+  color: white;
+}
+.footer__top .box h4 {
+  color: #0EA79D;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.footer__top .box p {
+  margin: 2px auto auto 0;
+  text-align: left;
+}
+.footer__top .box .cars .car {
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.footer__top .box .cars .car img {
+  width: 70px;
+  height: 40px;
+}
+.footer__top .box .cars .car h5 {
+  color: #0EA79D;
+  font-weight: bold;
+}
+.footer__top .box .cars .car h5 span {
+  color: white;
+  font-weight: bold;
+}
+.footer__top .box .cars .car:hover {
+  transform: scale(1.1);
+}
+.footer hr {
+  margin: 40px auto;
+}
+.footer__bottom {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+
+/*responsive for 1024px*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  section .items {
+    width: 98%;
+  }
+  section .items .item {
+    width: 320px;
+  }
+  section .items .item__top {
+    margin: auto;
+  }
+  section .items .item__bottom {
+    height: 270px;
+  }
+  section .cards {
+    width: 98%;
+  }
+  .car__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+/*responsive for 767x*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  section .items {
+    width: 98%;
+  }
+  section .items .item {
+    width: 230px;
+  }
+  section .items .item__top img {
+    height: 80%;
+  }
+  section .items .item__bottom {
+    height: 260px;
+  }
+  section .items .item__bottom h3 {
+    margin: -20px auto;
+  }
+  section .items .item__bottom .list {
+    flex-wrap: wrap;
+  }
+  section .cards {
+    width: 98%;
+  }
+  .car__top {
+    width: 95%;
+  }
+  .car__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .car__infos .left {
+    width: 90%;
+    margin: auto 0;
+  }
+  .car__infos .left .images a img {
+    width: 220px;
+  }
+  .car__infos .left .images .image img {
+    width: 220px;
+    height: 160px;
+  }
+  .car__infos .right {
+    width: 50%;
+  }
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+/*responsive for 350px*/
+@media screen and (min-width: 350px) and (max-width: 766px) {
+  .subtitle {
+    font-size: 1.4em;
+  }
+  section .container .row .item {
+    width: 100%;
+  }
+  .hero {
+    height: 40vh;
+    padding-top: 60px;
+  }
+  .grey {
+    height: auto;
+  }
+  .grey .cards {
+    height: auto;
+  }
+  .search {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .search__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .search__content__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .car__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .car .image img {
+    width: 310px;
+    height: 270px;
+  }
+  .car__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .car__infos .left {
+    width: 95%;
+    margin: auto 0;
+  }
+  .car__infos .left .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+  .car__infos .left .images img {
+    width: 310px;
+  }
+  .car__infos .right {
+    margin: auto 0;
+  }
+  .car__infos .right .card {
+    width: 280px;
+    margin: auto;
+  }
+  .footer__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=main.css.map */

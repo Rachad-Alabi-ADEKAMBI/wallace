@@ -1,0 +1,603 @@
+html, body{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+$black: black;
+$red: #0EA79D;
+$white: white;
+$grey: #F8F8F8;
+$green: green;
+$purple: purple;
+
+
+@mixin flex($flex-drection: row){
+    display: flex;
+    flex-direction: $flex-drection;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+h1, .title{
+    font-size: 1.8em;
+    text-align: center  ;
+    color: $red;
+    font-weight: bold;
+    margin: auto;
+}
+
+.text-bold{
+    font-weight: bold;
+    color: rgb(37, 33, 33);
+    font-size: 1.4em;
+}
+
+.text-white{
+    color: $white;
+}
+
+span{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.subtitle{
+    font-size: 1.6em;
+    text-align: center  ;
+    color: $red;
+    font-weight: bold;
+    margin: auto;
+}
+h2{
+    font-size: 1.9em;
+    text-align: center;
+}
+
+a{
+    color: $black;
+}
+
+a:hover{
+    color: $red;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+}
+
+
+.btn{
+    cursor: pointer;
+}
+
+button:hover,
+.btn-primary:hover{
+    //
+}
+
+.btn-primary{
+    background-color: $red;
+    border: $red;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background: $black;
+}
+
+.btn-success{
+    background-color: $green;
+}
+
+
+h3{
+    font-weight: bold;
+}
+
+
+.green{
+    background-color: $green;
+}
+
+.purple{
+    background-color: $purple;
+    color: $white;
+}
+
+.red{
+    background-color: $red;
+        color: $white;
+}
+
+i{
+    cursor: pointer;
+}
+.icons{
+    display: table;
+    margin: 20px auto auto 10px;
+    font-size: 1.5em;
+
+    i{
+        margin: 10px;
+    }
+
+    i:hover{
+        color: $red;
+    }
+}
+
+
+.close{
+    cursor: pointer;
+}
+
+.close:hover{
+    color: $red;
+}
+
+.hero{
+    height: 60vh;
+    min-height: 400px;
+    margin: 0 auto;
+    display: block;
+    background-image: url('http://wallace-renting.luiluilui.fr/public/img/maison2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 90px;
+
+
+    &__content{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+        padding-top: 60px;
+        text-align: center;
+
+        h1{
+            font-size: 3em;
+            font-style: italic;
+            color: $white;
+        }
+
+        p{
+            margin: 20px auto;
+            font-style: 1.1em;
+            font-weight: 800;
+        }
+
+
+    }
+}
+
+
+.car{
+    width: 100%;
+    margin: auto;
+   @include flex(column);
+
+    hr{
+        width: 100%;
+    }
+
+    &__top{
+        @include flex();
+        width: 90%;
+        margin: auto;
+        text-align: center;
+
+        h1{
+            color: $red;
+        }
+
+        .right{
+            display: block;
+
+            h2{
+                color: $red;
+                margin: auto auto 0 auto;
+            }
+
+            p{
+                margin: 0 auto;
+                span{
+                    color: $black;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .image{
+        text-align: center;
+        margin: 20px auto;
+        img{
+            width: 700px;
+            height: 350px;
+            margin: auto;
+        }
+    }
+
+    &__infos{
+        width: 100%;
+        margin: auto;
+        @include flex();
+
+        .left{
+
+            .details{
+               p{
+                span{
+                    color: $red;
+                    font-weight: bold;
+                }
+               }
+            }
+
+            .images{
+                @include flex();
+                flex-wrap: nowrap;
+                width: 100%;
+
+                a{
+                    cursor: pointer;
+                    margin: 5px;
+
+                    img{
+                        width: 230px;
+                        margin: 10x;
+                        height: 170px;
+
+                    }
+                }
+                    img{
+                        width: 230px;
+                        height: 170px;
+                        margin: 10px;
+
+                    }
+
+                    h4{
+                        text-align: center;
+                        color: $red;
+                        margin: 10px auto;
+                    }
+
+                    button{
+                        background-color: $red;
+                    }
+
+                    button:hover{
+                        background-color: $black;
+                    }
+            }
+        }
+
+        .right{
+
+            .card{
+                display: block;
+                margin: auto;
+                padding: 5px;
+                width: 250px;
+
+                &__top{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    &__infos{
+                        font-weight: bold;
+                        i{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.footer{
+    height: auto;
+    background-color: $black;
+    display: block;
+    margin: 80px auto 0 auto;
+    padding-top: 10px;
+
+    &__top{
+        @include flex();
+        width: 95%;
+        margin: auto;
+
+
+        .box{
+            flex: 1;
+            display: block;
+            text-align: left;
+            color: $white;
+
+            h4{
+                color: $red;
+
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+
+
+
+            p{
+                margin: 2px auto auto 0;
+                text-align: left;
+            }
+
+
+            .cars{
+                .car{
+                    cursor: pointer;
+                    transition: 500ms ease-in-out;
+
+
+                    img{
+                        width: 70px;
+                        height: 40px;
+                    }
+
+                    h5{
+                        color: $red;
+                        font-weight: bold;
+
+                        span{
+                            color: $white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .car:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    hr{
+        margin: 40px auto;
+    }
+
+    &__bottom{
+        color: $white;
+        @include flex();
+        width: 95%;
+        margin: auto;
+    }
+
+}
+
+/*responsive for 1024px*/
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    section{
+        .items{
+            width: 98%;
+
+            .item{
+                width: 320px;
+
+                &__top{
+                    margin: auto;
+                }
+
+                &__bottom{
+                    height: 270px;
+                }
+            }
+        }
+
+        .cards{
+            width: 98%;
+        }
+    }
+
+    .car{
+        &__infos{
+            @include flex(column);
+        }
+    }
+}
+
+/*responsive for 767x*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+   .search{
+    &__content{
+        &__item{
+
+        }
+    }
+   }
+
+    section{
+        .items{
+            width: 98%;
+
+            .item{
+                width: 230px;
+
+                &__top{
+                    img{
+                        height: 80%;
+                    }
+                }
+
+                &__bottom{
+                    height: 260px;
+
+                    h3{
+                        margin: -20px auto;
+                    }
+
+                    .list{
+                        flex-wrap: wrap;
+
+                    }
+                }
+            }
+        }
+
+        .cards{
+            width: 98%;
+        }
+    }
+
+    .car{
+        &__top{
+            width: 95%;
+        }
+
+        &__infos{
+            @include flex(column);
+            width: 95%;
+
+            .left{
+                width: 90%;
+                margin: auto 0;
+                .images{
+                    a{
+                        img{
+                            width: 220px;
+
+                        }
+                    }
+
+                    .image{
+                        img{
+                            width: 220px;
+                            height: 160px;
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 50%;
+            }
+        }
+
+
+    }
+
+
+
+    .footer{
+        &__top{
+            @include flex(column);
+        }
+    }
+}
+
+
+/*responsive for 350px*/
+@media screen and (min-width: 350px) and (max-width: 766px){
+
+   .subtitle{
+    font-size: 1.4em;
+   }
+
+   section{
+    .container{
+        .row{
+            .item{
+                width: 100%;
+            }
+        }
+    }
+   }
+
+   .hero{
+    height: 40vh;
+    padding-top: 60px;
+   }
+
+
+   .grey{
+    height: auto;
+
+    .cards{
+        height: auto;
+    }
+   }
+    .search{
+        height: auto;
+        @include flex(column);
+
+        &__content{
+            @include flex(column);
+
+            &__item{
+                @include flex(column);
+            }
+        }
+    }
+
+    .car{
+        &__top{
+            @include flex(column);
+
+            .right{
+
+            }
+        }
+
+        .image{
+            img{
+                width: 310px;
+                height: 270px;
+            }
+        }
+
+        &__infos{
+            @include flex(column);
+
+            .left{
+                width: 95%;
+                margin: auto 0;
+
+                .images{
+                    @include flex(column);
+                    margin: auto;
+
+                    img{
+                        width: 310px;
+                    }
+                }
+
+
+
+            }
+
+            .right{
+                margin: auto 0;
+
+                .card{
+                    width: 280px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .footer{
+        &__top{
+            @include flex(column);
+        }
+    }
+}
